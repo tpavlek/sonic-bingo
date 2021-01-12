@@ -1,0 +1,9 @@
+[build]
+
+command = "npm run production"
+publish = "public"
+
+[build.environment]
+
+PHP_VERSION="7.4"
+NODE_VERSION="14.9"
