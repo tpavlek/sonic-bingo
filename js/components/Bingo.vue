@@ -2,11 +2,15 @@
 
     <div class="flex w-full flex-wrap flex-wrap-reverse">
         <div class="w-full lg:w-1/3 flex flex-col justify-center items-center p-4">
-            <img src="img/GENERATE_BUTTON.png" @click="download" class="cursor-pointer hover:shadow-md"/>
+            <div class="relative">
+                <img src="img/TITLE_TWO_LINES.png" class="mx-auto p-4"/>
+                <img src="img/REFRESH_DIRECTIONS.png" class="mx-auto px-6" />
+                <img src="img/Arrow.png" class="absolute right-0 bottom-0 w-24" />
+                <img src="img/GENERATE_BUTTON.png" @click="download" class="pt-16 mx-auto cursor-pointer hover:shadow-md"/>
+            </div>
         </div>
         <div class="w-full lg:w-2/3 lg:flex-grow">
             <div class="text-right ml-auto">
-                <img src="img/TITLE.png" class="mx-auto h-24 p-4"/>
                 <div class="relative inline-block p-4" style="max-height: 90vh;" id="bingo">
                     <img src="img/BINGO_CARD.png" class="h-full opacity-90" style="max-height: 85vh;" />
                     <div class="absolute grid grid-cols-5 top-0 bottom-0 right-0 m-auto gap-6 overflow-hidden h-full w-full px-12 py-8">
