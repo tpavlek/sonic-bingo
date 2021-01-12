@@ -40,11 +40,20 @@ export default {
         },
         predictionPath(index) {
             return 'img/predictions/f' + index + ".png";
+        },
+        shuffle(a) {
+            for (let i = a.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [a[i], a[j]] = [a[j], a[i]];
+            }
+            return a;
         }
     },
     computed: {
         selectedPredictions() {
-            return Array.from(new Array(25), (x, i) => i + 1);
+            let all = Array.from(new Array(86), (x, i) => i + 1);
+            all = this.shuffle(all);
+            return all.slice(0, 25);
         }
     }
 }
