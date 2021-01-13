@@ -6,7 +6,7 @@
                 <img src="img/TITLE_TWO_LINES.png" class="mx-auto p-4"/>
                 <img src="img/REFRESH_DIRECTIONS.png" class="mx-auto px-6" />
                 <img src="img/Arrow.png" class="absolute right-0 bottom-0 w-24" />
-                <img src="img/Save_Card.png" @click="download" class="pt-16 mx-auto cursor-pointer hover:shadow-md"/>
+                <img src="img/Save_Card.png" @click="download" class="w-64 pt-16 mx-auto cursor-pointer hover:shadow-md"/>
             </div>
         </div>
         <div class="w-full lg:w-2/3 lg:flex-grow">
